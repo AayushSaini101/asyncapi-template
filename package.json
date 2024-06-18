@@ -1,7 +1,16 @@
 {
-    "name": "asyncapi-template",
+    "name": "myTemplate",
     "generator": {
-      "renderer": "react"
+      "renderer": "react",
+      "supportedProtocols": [
+        "mqtt"
+      ],
+      "parameters": {
+          "version": {
+            "description": "Overrides application version under `info.version` in the AsyncAPI document.",
+            "required": false
+          }
+      }
     },
     "dependencies": {
       "@asyncapi/generator-react-sdk": "^0.2.25"
